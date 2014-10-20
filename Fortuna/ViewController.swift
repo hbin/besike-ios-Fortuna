@@ -9,17 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let delegate = UIApplication.sharedApplication().delegate as AppDelegate
+
+    @IBOutlet weak var quotationTextView: UITextView!
+
+    @IBAction func rootViewTapped(sender: UITapGestureRecognizer) {
+        displayRandomQuote()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        displayRandomQuote()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func displayRandomQuote() {
+        let quotes = arc4random_uniform(2) == 0 ? delegate.positiveQuotes : delegate.negativeQuotes
+
+        quotationTextView.text = quotes[Int(arc4random_uniform(UInt32(quotes.endIndex)))]
     }
-
-
 }
 

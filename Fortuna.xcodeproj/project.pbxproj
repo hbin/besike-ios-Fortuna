@@ -13,6 +13,8 @@
 		818ADEAF19F0CBC10012CD5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818ADEAE19F0CBC10012CD5D /* Images.xcassets */; };
 		818ADEB219F0CBC10012CD5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818ADEB019F0CBC10012CD5D /* LaunchScreen.xib */; };
 		818ADEBE19F0CBC10012CD5D /* FortunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818ADEBD19F0CBC10012CD5D /* FortunaTests.swift */; };
+		818ADEC919F104F20012CD5D /* positiveQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 818ADEC719F104F20012CD5D /* positiveQuotes.json */; };
+		818ADECA19F104F20012CD5D /* negativeQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 818ADEC819F104F20012CD5D /* negativeQuotes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		818ADEB719F0CBC10012CD5D /* FortunaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortunaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818ADEBC19F0CBC10012CD5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818ADEBD19F0CBC10012CD5D /* FortunaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunaTests.swift; sourceTree = "<group>"; };
+		818ADEC719F104F20012CD5D /* positiveQuotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = positiveQuotes.json; sourceTree = "<group>"; };
+		818ADEC819F104F20012CD5D /* negativeQuotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = negativeQuotes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		818ADEA519F0CBC10012CD5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				818ADEC719F104F20012CD5D /* positiveQuotes.json */,
+				818ADEC819F104F20012CD5D /* negativeQuotes.json */,
 				818ADEA619F0CBC10012CD5D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818ADECA19F104F20012CD5D /* negativeQuotes.json in Resources */,
 				818ADEAD19F0CBC10012CD5D /* Main.storyboard in Resources */,
 				818ADEB219F0CBC10012CD5D /* LaunchScreen.xib in Resources */,
 				818ADEAF19F0CBC10012CD5D /* Images.xcassets in Resources */,
+				818ADEC919F104F20012CD5D /* positiveQuotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
